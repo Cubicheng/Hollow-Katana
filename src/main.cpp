@@ -27,6 +27,16 @@ void LoadResources() {
 	}
 }
 
+static void draw_background() {
+	static IMAGE* img_background = ResourcesManager::GetInstance()->getImage("background");
+	static ut::Rect rect_dst = {
+		(getwidth() - img_background->getwidth()) / 2,
+		(getheight() - img_background->getheight()) / 2,
+		img_background->getwidth(),
+		img_background->getheight()
+	};
+	ut::putimage_ex(img_background, &rect_dst);
+}
 
 int main() {
 
@@ -49,6 +59,7 @@ int main() {
 		setbkcolor(RGB(0, 0, 0));
 		cleardevice();
 
+		draw_background();
 
 		FlushBatchDraw();
 
