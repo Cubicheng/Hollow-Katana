@@ -3,6 +3,6 @@
 enum CollisionLayer
 {
 	None,
-	Player,
-	Enemy
+	PlayerLayer,
+	EnemyLayer
 };

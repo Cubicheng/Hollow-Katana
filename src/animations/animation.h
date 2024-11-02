@@ -1,10 +1,11 @@
 #pragma once
 
-#include "util.h"
-#include "timer.h"
-#include "vector2.h"
+#include "../util.h"
+#include "../timer.h"
+#include "../vector2.h"
 #include "atlas.h"
 #include <vector>
+#include <iostream>
 
 class Animation {
 public:
@@ -93,15 +94,29 @@ public:
 		const Frame &frame = frames[idx_frame];
 		ut::Rect rect_dst;
 		rect_dst.x = (int)position.x - frame.rect.w / 2;
-		if(anchor_mode==AnchorMode::Centered)
-			rect_dst.y = (int)position.y - frame.rect.h / 2;
+		if(anchor_mode==AnchorMode::BottomCentered)
+			rect_dst.y = (int)position.y - frame.rect.h;
 		else
-			rect_dst.y = (int)position.y;
+			rect_dst.y = (int)position.y - frame.rect.h/2;
 		
 		rect_dst.w = frame.rect.w;
 		rect_dst.h = frame.rect.h;
 
+		//setlinecolor(RGB(0, 255, 0));
+		//rectangle((int)(rect_dst.x),
+		//	(int)(rect_dst.y),
+		//	(int)(rect_dst.x + rect_dst.w),
+		//	(int)(rect_dst.y + rect_dst.h));
+
 		ut::putimage_ex(frame.img, &rect_dst, &frame.rect);
+	}
+
+	int get_height() const {
+		return frames[0].rect.h;
+	}
+
+	int get_width() const {
+		return frames[0].rect.w;
 	}
 
 private:

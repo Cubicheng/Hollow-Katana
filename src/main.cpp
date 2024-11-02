@@ -3,7 +3,9 @@
 #include <thread>
 #include "util.h"
 #include "frame_timer.h"
-#include "resources_manager.h"
+#include "animations/resources_manager.h"
+#include "collision/collision_manager.h"
+#include "characters/character_manager.h"
 
 HWND hwnd;
 ExMessage msg;
@@ -44,22 +46,27 @@ int main() {
 
 	LoadResources();
 
+	frameTimer.init();
+
 	BeginBatchDraw();
 
 	while (!is_quit) {
+		frameTimer.on_frame_start();
+
 		while (peekmessage(&msg)) {
-
-
+			CharacterManager::GetInstance()->on_input(msg);
 		}
 
-		ut::putimage_alpha(0, 0, ResourcesManager::GetInstance()->getImage("background"));
-
-		frameTimer.update();
+		frameTimer.on_frame_tick();
+		CharacterManager::GetInstance()->on_update(frameTimer.get_delta().count());
+		CollisionManager::getInstance()->process_collisions();
 
 		setbkcolor(RGB(0, 0, 0));
 		cleardevice();
 
 		draw_background();
+		CharacterManager::GetInstance()->on_render();
+		CollisionManager::getInstance()->on_debug_render();
 
 		FlushBatchDraw();
 
@@ -67,7 +74,6 @@ int main() {
 	}
 
 	EndBatchDraw();
-
 
 	return 0;
 }

@@ -1,6 +1,6 @@
 #pragma once
 
-#include "vector2.h"
+#include "../vector2.h"
 #include "collision_layer.h"
 
 #include <functional>

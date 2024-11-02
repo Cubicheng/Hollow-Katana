@@ -24,8 +24,7 @@ public:
 	}
 
 	Vector2 operator* (const float& val) {
-		x *= val;
-		y *= val;
+		return Vector2(x * val, y * val);
 	}
 
 	void operator+=(const Vector2& vec){

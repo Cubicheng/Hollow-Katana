@@ -33,15 +33,20 @@ public:
 	}
 
 	void on_update(float delta) {
-		if (pause) return;
+		if (paused) return;
 		pass_time += delta;
 		if (pass_time >= wait_time) {
 			bool can_shot = (!one_shot || (one_shot && !shotted));
-			shotted = true;
-			if (can_shot && on_timeout)
+			if (can_shot && on_timeout) {
 				on_timeout();
-			pass_time -= wait_time;
+				shotted = true;
+			}
+			pass_time = 0;
 		}
+	}
+
+	int get_shotted() {
+		return shotted;
 	}
 
 private:

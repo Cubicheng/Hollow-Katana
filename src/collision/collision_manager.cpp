@@ -30,13 +30,13 @@ void CollisionManager::process_collisions(){
                 continue;
 
             bool is_collid_x =
-                (std::max(src->position.x + src->get_size().x / 2, dst->position.x + dst->get_size().x / 2)
-                    - std::min(src->position.x - src->get_size().x / 2, dst->position.x - dst->get_size().x / 2)
+                (max(src->position.x + src->get_size().x / 2, dst->position.x + dst->get_size().x / 2)
+                    - min(src->position.x - src->get_size().x / 2, dst->position.x - dst->get_size().x / 2)
                     <= src->get_size().x + dst->get_size().x);
 
             bool is_collid_y =
-                (std::max(src->position.y + src->get_size().y / 2, dst->position.y + dst->get_size().y / 2)
-                    - std::min(src->position.y - src->get_size().y / 2, dst->position.y - dst->get_size().y / 2)
+                (max(src->position.y + src->get_size().y / 2, dst->position.y + dst->get_size().y / 2)
+                    - min(src->position.y - src->get_size().y / 2, dst->position.y - dst->get_size().y / 2)
                     <= src->get_size().y + dst->get_size().y);
 
             if (is_collid_x && is_collid_y && dst->onCollision)
@@ -48,10 +48,11 @@ void CollisionManager::process_collisions(){
 
 void CollisionManager::on_debug_render(){
     for (CollisionBox* box : collision_box_list) {
+        if (!box->enabled) continue;
         setlinecolor(box->enabled ? RGB(255, 195, 195) : RGB(115, 115, 175));
-        rectangle((int)(box->position.x - box->position.x / 2),
-            (int)(box->position.y - box->position.y / 2),
-            (int)(box->position.x + box->position.x / 2),
-            (int)(box->position.y + box->position.y / 2));
+        rectangle((int)(box->position.x - box->size.x / 2),
+            (int)(box->position.y - box->size.y / 2),
+            (int)(box->position.x + box->size.x / 2),
+            (int)(box->position.y + box->size.y / 2));
     }
 }

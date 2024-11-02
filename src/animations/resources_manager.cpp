@@ -1,5 +1,5 @@
 #include "resources_manager.h"
-#include "util.h"
+#include "../util.h"
 
 struct ImageResInfo {
 	std::string id;
@@ -24,7 +24,7 @@ static const std::vector<ImageResInfo> image_info_list = {
 	{"player_run_right",_T("resources/player/run.png")},
 	{"player_roll_right",_T("resources/player/roll.png")},
 
-	{"player_vfx_attack_dowm",_T("resources/player/vfx_attack_down.png")},
+	{"player_vfx_attack_down",_T("resources/player/vfx_attack_down.png")},
 	{"player_vfx_attack_left",_T("resources/player/vfx_attack_left.png")},
 	{"player_vfx_attack_right",_T("resources/player/vfx_attack_right.png")},
 	{"player_vfx_attack_up",_T("resources/player/vfx_attack_up.png")},
@@ -61,7 +61,7 @@ static inline bool check_img_valid(IMAGE* img) {
 ResourcesManager* ResourcesManager::manager = nullptr;
 
 ResourcesManager* ResourcesManager::GetInstance() {
-	if(!manager)
+	if (!manager)
 		manager = new ResourcesManager();
 	return manager;
 }
@@ -88,12 +88,12 @@ void ResourcesManager::load() {
 
 
 	flip_image("player_attack_right", "player_attack_left", 5);
-	flip_image("player_dead_right",   "player_dead_left",   6);
-	flip_image("player_fall_right",   "player_fall_left",   5); 
-	flip_image("player_idle_right",   "player_idle_left",   5); 
-	flip_image("player_jump_right",   "player_jump_left",   5); 
-	flip_image("player_run_right",    "player_run_left",    10);
-	flip_image("player_roll_right",   "player_roll_left",   7);
+	flip_image("player_dead_right", "player_dead_left", 6);
+	flip_image("player_fall_right", "player_fall_left", 5);
+	flip_image("player_idle_right", "player_idle_left", 5);
+	flip_image("player_jump_right", "player_jump_left", 5);
+	flip_image("player_run_right", "player_run_left", 10);
+	flip_image("player_roll_right", "player_roll_left", 7);
 
 	flip_atlas("enemy_aim_left", "enemy_aim_right");
 	flip_atlas("enemy_dash_in_air_left", "enemy_dash_in_air_right");
@@ -106,43 +106,43 @@ void ResourcesManager::load() {
 	flip_atlas("enemy_throw_barb_left", "enemy_throw_barb_right");
 	flip_atlas("enemy_throw_silk_left", "enemy_throw_silk_right");
 	flip_atlas("enemy_throw_sword_left", "enemy_throw_sword_right");
-	
+
 	flip_atlas("enemy_vfx_dash_in_air_left", "enemy_vfx_dash_in_air_right");
 	flip_atlas("enemy_vfx_dash_on_floor_left", "enemy_vfx_dash_on_floor_right");
 
 
-	ut::load_audio("resources/audio/bgm.mp3", "bgm");
-	ut::load_audio("resources/audio/barb_break.mp3", "barb_break");
-	ut::load_audio("resources/audio/bullet_time.mp3", "bullet_time");
-	
-	ut::load_audio("resources/audio/enemy_dash.mp3", "enemy_dash");
-	ut::load_audio("resources/audio/enemy_run.mp3", "enemy_run");
-	ut::load_audio("resources/audio/enemy_hurt1.mp3", "enemy_hurt1");
-	ut::load_audio("resources/audio/enemy_hurt2.mp3", "enemy_hurt2");
-	ut::load_audio("resources/audio/enemy_hurt3.mp3", "enemy_hurt3");
-	ut::load_audio("resources/audio/throw_barbs.mp3", "throw_barbs");
-	ut::load_audio("resources/audio/throw_silk.mp3", "throw_silk");
-	ut::load_audio("resources/audio/throw_sword.mp3", "throw_sword");
+	ut::load_audio(_T("resources/audio/bgm.mp3"), _T("bgm"));
+	ut::load_audio(_T("resources/audio/barb_break.mp3"), _T("barb_break"));
+	ut::load_audio(_T("resources/audio/bullet_time.mp3"), _T("bullet_time"));
 
-	ut::load_audio("resources/audio/player_attack1.mp3", "player_attach1");
-	ut::load_audio("resources/audio/player_attack2.mp3", "player_attach2");
-	ut::load_audio("resources/audio/player_attack3.mp3", "player_attach3");
-	ut::load_audio("resources/audio/player_dead.mp3", "player_dead");
-	ut::load_audio("resources/audio/player_hurt.mp3", "player_hurt");
-	ut::load_audio("resources/audio/player_jump.mp3", "player_jump");
-	ut::load_audio("resources/audio/player_land.mp3", "player_land");
-	ut::load_audio("resources/audio/player_roll.mp3", "player_roll");
-	ut::load_audio("resources/audio/player_run.mp3", "player_run");
+	ut::load_audio(_T("resources/audio/enemy_dash.mp3"), _T("enemy_dash"));
+	ut::load_audio(_T("resources/audio/enemy_run.mp3"), _T("enemy_run"));
+	ut::load_audio(_T("resources/audio/enemy_hurt_1.mp3"), _T("enemy_hurt_1"));
+	ut::load_audio(_T("resources/audio/enemy_hurt_2.mp3"), _T("enemy_hurt_2"));
+	ut::load_audio(_T("resources/audio/enemy_hurt_3.mp3"), _T("enemy_hurt_3"));
+	ut::load_audio(_T("resources/audio/throw_barbs.mp3"), _T("throw_barbs"));
+	ut::load_audio(_T("resources/audio/throw_silk.mp3"), _T("throw_silk"));
+	ut::load_audio(_T("resources/audio/throw_sword.mp3"), _T("throw_sword"));
+
+	ut::load_audio(_T("resources/audio/player_attack_1.mp3"), _T("player_attack_1"));
+	ut::load_audio(_T("resources/audio/player_attack_2.mp3"), _T("player_attack_2"));
+	ut::load_audio(_T("resources/audio/player_attack_3.mp3"), _T("player_attack_3"));
+	ut::load_audio(_T("resources/audio/player_dead.mp3"), _T("player_dead"));
+	ut::load_audio(_T("resources/audio/player_hurt.mp3"), _T("player_hurt"));
+	ut::load_audio(_T("resources/audio/player_jump.mp3"), _T("player_jump"));
+	ut::load_audio(_T("resources/audio/player_land.mp3"), _T("player_land"));
+	ut::load_audio(_T("resources/audio/player_roll.mp3"), _T("player_roll"));
+	ut::load_audio(_T("resources/audio/player_run.mp3"), _T("player_run"));
 }
 
-Atlas* ResourcesManager::getAtlas(const std::string& id) const{
+Atlas* ResourcesManager::getAtlas(const std::string& id) const {
 	const auto& it = atlasMap.find(id);
-	if(it==atlasMap.end())
+	if (it == atlasMap.end())
 		return nullptr;
 	return it->second;
 }
 
-IMAGE* ResourcesManager::getImage(const std::string& id) const{
+IMAGE* ResourcesManager::getImage(const std::string& id) const {
 	const auto& it = imageMap.find(id);
 	if (it == imageMap.end())
 		return nullptr;
@@ -152,10 +152,10 @@ IMAGE* ResourcesManager::getImage(const std::string& id) const{
 ResourcesManager::ResourcesManager() = default;
 ResourcesManager::~ResourcesManager() = default;
 
-void ResourcesManager::flip_image(IMAGE* src_image, IMAGE* dst_image, int num_h){
+void ResourcesManager::flip_image(IMAGE* src_image, IMAGE* dst_image, int num_h) {
 	int w = src_image->getwidth();
 	int h = src_image->getheight();
-	int w_frame= w / num_h;
+	int w_frame = w / num_h;
 	Resize(dst_image, w, h);
 	DWORD* src_buf = GetImageBuffer(src_image);
 	DWORD* dst_buf = GetImageBuffer(dst_image);
@@ -172,7 +172,7 @@ void ResourcesManager::flip_image(IMAGE* src_image, IMAGE* dst_image, int num_h)
 	}
 }
 
-void ResourcesManager::flip_image(const std::string& src_id, const std::string& dst_id, int num_h){
+void ResourcesManager::flip_image(const std::string& src_id, const std::string& dst_id, int num_h) {
 	IMAGE* src_image = imageMap[src_id];
 	IMAGE* dst_image = new IMAGE();
 
@@ -181,13 +181,13 @@ void ResourcesManager::flip_image(const std::string& src_id, const std::string& 
 	imageMap[dst_id] = dst_image;
 }
 
-void ResourcesManager::flip_atlas(const std::string& src_id, const std::string& dst_id){
+void ResourcesManager::flip_atlas(const std::string& src_id, const std::string& dst_id) {
 	Atlas* src_atlas = atlasMap[src_id];
 	Atlas* dst_atlas = new Atlas();
 
 	for (int i = 0; i < src_atlas->get_size(); i++) {
 		IMAGE img_flipped;
-		flip_image(src_atlas->get_image(i),&img_flipped);
+		flip_image(src_atlas->get_image(i), &img_flipped);
 		dst_atlas->add_image(img_flipped);
 	}
 
