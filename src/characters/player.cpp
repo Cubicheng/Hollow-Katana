@@ -2,6 +2,7 @@
 #include "../animations/resources_manager.h"
 #include "../util.h"
 #include "../state_machine/player_state_nodes/player_state_nodes.h"
+#include "../bullet_time_manager.h"
 
 #include <cmath>
 
@@ -108,11 +109,13 @@ void Player::on_input(const ExMessage& msg){
 			break;
 
 		case WM_RBUTTONDOWN:
-			//todo
+			//ut::play_audio(_T("bullet_time"), false);
+			BulletTimeManager::GetSingleton()->set_status(BulletTimeManager::Status::Entering);
 			break;
 
 		case WM_RBUTTONUP:
-			//todo
+			//ut::stop_audio(_T("bullet_time"));
+			BulletTimeManager::GetSingleton()->set_status(BulletTimeManager::Status::Exiting);
 			break;
 	}
 }

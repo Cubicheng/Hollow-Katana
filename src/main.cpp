@@ -6,6 +6,7 @@
 #include "animations/resources_manager.h"
 #include "collision/collision_manager.h"
 #include "characters/character_manager.h"
+#include "bullet_time_manager.h"
 
 HWND hwnd;
 ExMessage msg;
@@ -58,7 +59,8 @@ int main() {
 		}
 
 		frameTimer.on_frame_tick();
-		CharacterManager::GetInstance()->on_update(frameTimer.get_delta().count());
+		float scaled_delta = BulletTimeManager::GetSingleton()->on_update(frameTimer.get_delta().count());
+		CharacterManager::GetInstance()->on_update(scaled_delta);
 		CollisionManager::getInstance()->process_collisions();
 
 		setbkcolor(RGB(0, 0, 0));
