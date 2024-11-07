@@ -9,7 +9,7 @@ void PlayerJumpState::on_enter() {
 
 	player->on_jump();
 
-	//ut::play_audio(_T("player_jump"), false);
+	ut::play_audio(_T("player_jump"), false);
 }
 
 void PlayerJumpState::on_update(float delta) {

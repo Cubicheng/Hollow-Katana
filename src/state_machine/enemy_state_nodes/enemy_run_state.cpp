@@ -6,7 +6,7 @@
 void EnemyRunState::on_enter(){
 	CharacterManager::GetInstance()->GetEnemy()->set_animation("run");
 
-	//ut::play_audio(_T("enemy_run"), true);
+	ut::play_audio(_T("enemy_run"), true);
 }
 
 void EnemyRunState::on_update(float delta){
@@ -37,7 +37,7 @@ void EnemyRunState::on_update(float delta){
 				enemy->switch_state("squat");//25%
 			}
 		}
-		//ut::stop_audio(_T("enemy_run"));
+		ut::stop_audio(_T("enemy_run"));
 	}
 }
 

@@ -19,7 +19,7 @@ void EnemyDashOnFloorState::on_enter(){
 	enemy->on_dash();
 	timer.restart();
 
-	//ut::play_audio(_T("enemy_dash"), false);
+	ut::play_audio(_T("enemy_dash"), false);
 }
 
 void EnemyDashOnFloorState::on_update(float delta){

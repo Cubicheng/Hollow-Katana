@@ -109,12 +109,12 @@ void Player::on_input(const ExMessage& msg){
 			break;
 
 		case WM_RBUTTONDOWN:
-			//ut::play_audio(_T("bullet_time"), false);
+			ut::play_audio(_T("bullet_time"), false);
 			BulletTimeManager::GetSingleton()->set_status(BulletTimeManager::Status::Entering);
 			break;
 
 		case WM_RBUTTONUP:
-			//ut::stop_audio(_T("bullet_time"));
+			ut::stop_audio(_T("bullet_time"));
 			BulletTimeManager::GetSingleton()->set_status(BulletTimeManager::Status::Exiting);
 			break;
 	}
@@ -153,7 +153,7 @@ void Player::on_render(){
 }
 
 void Player::on_hurt(){
-	//ut::play_audio(_T("player_hurt"), false);
+	ut::play_audio(_T("player_hurt"), false);
 }
 
 void Player::on_jump(){

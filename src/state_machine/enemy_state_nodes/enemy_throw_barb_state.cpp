@@ -18,7 +18,7 @@ void EnemyThrowBarbState::on_enter(){
 	enemy->set_animation("throw_barb");
 	timer.restart();
 
-	//ut::play_audio(_T("enemy_throw_barbs"), false);
+	ut::play_audio(_T("enemy_throw_barbs"), false);
 }
 
 void EnemyThrowBarbState::on_update(float delta){

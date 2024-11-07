@@ -5,7 +5,7 @@
 void PlayerRunState::on_enter() {
 	Player* player = (Player*)CharacterManager::GetInstance()->GetPlayer();
 	player->set_animation("run");
-	//ut::play_audio(_T("player_run"), true);
+	ut::play_audio(_T("player_run"), true);
 }
 
 void PlayerRunState::on_update(float delta) {
@@ -23,5 +23,5 @@ void PlayerRunState::on_update(float delta) {
 }
 
 void PlayerRunState::on_exit(){
-	//ut::stop_audio(_T("player_run"));
+	ut::stop_audio(_T("player_run"));
 }

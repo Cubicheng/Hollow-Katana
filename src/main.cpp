@@ -80,7 +80,7 @@ int main() {
 
 		draw_background();
 		CharacterManager::GetInstance()->on_render();
-		CollisionManager::getInstance()->on_debug_render();
+		//CollisionManager::getInstance()->on_debug_render();
 		draw_remain_hp();
 
 		FlushBatchDraw();

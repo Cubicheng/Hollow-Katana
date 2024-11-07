@@ -14,7 +14,7 @@ void PlayerFallState::on_update(float delta) {
 	else if (player->is_on_floor()) {
 		player->switch_state("idle");
 		player->on_land();
-		//ut::play_audio(_T("player_land"), false);
+		ut::play_audio(_T("player_land"), false);
 	}
 	else if (player->can_attack()) {
 		player->switch_state("attack");

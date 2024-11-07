@@ -17,7 +17,7 @@ void EnemyDashInAirState::on_enter(){
 	enemy->set_dashing_in_air(false);
 	enemy->on_dash();
 
-	//ut::play_audio(_T("enemy_dash"), false);
+	ut::play_audio(_T("enemy_dash"), false);
 }
 
 void EnemyDashInAirState::on_update(float delta){

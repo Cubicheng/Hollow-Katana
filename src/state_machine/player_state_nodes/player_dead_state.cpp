@@ -17,7 +17,7 @@ PlayerDeadState::PlayerDeadState(){
 void PlayerDeadState::on_enter(){
 	Player* player = (Player*)CharacterManager::GetInstance()->GetPlayer();
 	player->set_animation("dead");
-	//ut::play_audio(_T("player_dead"), false);
+	ut::play_audio(_T("player_dead"), false);
 }
 
 void PlayerDeadState::on_update(float delta){

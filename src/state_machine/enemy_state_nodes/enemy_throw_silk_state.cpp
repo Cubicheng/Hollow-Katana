@@ -30,7 +30,7 @@ void EnemyThrowSilkState::on_enter(){
 	enemy->on_throw_silk();
 	timer.restart();
 
-	//ut::play_audio(_T("enemy_throw_silk"), false);
+	ut::play_audio(_T("enemy_throw_silk"), false);
 }
 
 void EnemyThrowSilkState::on_update(float delta){

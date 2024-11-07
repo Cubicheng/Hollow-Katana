@@ -22,7 +22,7 @@ void PlayerRollState::on_enter() {
 	player->on_roll();
 	timer.restart();
 
-	//ut::play_audio(_T("player_roll"), false);
+	ut::play_audio(_T("player_roll"), false);
 }
 
 void PlayerRollState::on_update(float delta) {

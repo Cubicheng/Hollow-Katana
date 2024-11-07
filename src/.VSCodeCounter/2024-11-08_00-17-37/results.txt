@@ -1,0 +1,103 @@
+Date : 2024-11-08 00:17:37
+Directory : d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src
+Total : 70 files,  2559 codes, 8 comments, 617 blanks, all 3184 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| C++      |         70 |      2,559 |          8 |        617 |      3,184 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++--------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                                     | files      | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                        |         70 |      2,559 |          8 |        617 |      3,184 |
+| . (Files)                                                                                                                |          7 |        299 |          1 |         82 |        382 |
+| animations                                                                                                               |          4 |        333 |          5 |         70 |        408 |
+| bullets                                                                                                                  |          4 |        169 |          0 |         43 |        212 |
+| characters                                                                                                               |          8 |        701 |          2 |        175 |        878 |
+| collision                                                                                                                |          4 |        113 |          0 |         33 |        146 |
+| state_machine                                                                                                            |         43 |        944 |          0 |        214 |      1,158 |
+| state_machine (Files)                                                                                                    |          3 |         54 |          0 |         12 |         66 |
+| state_machine\enemy_state_nodes                                                                                          |         25 |        584 |          0 |        135 |        719 |
+| state_machine\player_state_nodes                                                                                         |         15 |        306 |          0 |         67 |        373 |
++--------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++--------------------------------------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                                                                                 | language | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\animations\animation.h                                        | C++      |        109 |          5 |         26 |        140 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\animations\atlas.h                                            | C++      |         32 |          0 |          9 |         41 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\animations\resources_manager.cpp                              | C++      |        170 |          0 |         30 |        200 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\animations\resources_manager.h                                | C++      |         22 |          0 |          5 |         27 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\bullet_time_manager.cpp                                       | C++      |         33 |          0 |          8 |         41 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\bullet_time_manager.h                                         | C++      |         24 |          0 |          8 |         32 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\bullets\barb.cpp                                              | C++      |         81 |          0 |         12 |         93 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\bullets\barb.h                                                | C++      |         39 |          0 |         13 |         52 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\bullets\sword.cpp                                             | C++      |         29 |          0 |          9 |         38 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\bullets\sword.h                                               | C++      |         20 |          0 |          9 |         29 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\characters\character.cpp                                      | C++      |         74 |          0 |         17 |         91 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\characters\character.h                                        | C++      |         80 |          0 |         23 |        103 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\characters\character_manager.cpp                              | C++      |         28 |          0 |         14 |         42 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\characters\character_manager.h                                | C++      |         24 |          0 |          8 |         32 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\characters\enemy.cpp                                          | C++      |        151 |          0 |         36 |        187 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\characters\enemy.h                                            | C++      |         54 |          0 |         17 |         71 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\characters\player.cpp                                         | C++      |        213 |          2 |         36 |        251 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\characters\player.h                                           | C++      |         77 |          0 |         24 |        101 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\collision\collision_box.h                                     | C++      |         40 |          0 |         14 |         54 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\collision\collision_layer.h                                   | C++      |          7 |          0 |          1 |          8 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\collision\collision_manager.cpp                               | C++      |         48 |          0 |         11 |         59 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\collision\collision_manager.h                                 | C++      |         18 |          0 |          7 |         25 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\frame_timer.h                                                 | C++      |         36 |          0 |          8 |         44 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\main.cpp                                                      | C++      |         73 |          1 |         20 |         94 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\state_machine\enemy_state_nodes\enemy_aim_state.cpp           | C++      |         25 |          0 |          6 |         31 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\state_machine\enemy_state_nodes\enemy_aim_state.h             | C++      |         13 |          0 |          4 |         17 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\state_machine\enemy_state_nodes\enemy_dash_in_air_state.cpp   | C++      |         31 |          0 |          8 |         39 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\state_machine\enemy_state_nodes\enemy_dash_in_air_state.h     | C++      |         13 |          0 |          4 |         17 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\state_machine\enemy_state_nodes\enemy_dash_on_floor_state.cpp | C++      |         30 |          0 |          9 |         39 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\state_machine\enemy_state_nodes\enemy_dash_on_floor_state.h   | C++      |         14 |          0 |          4 |         18 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\state_machine\enemy_state_nodes\enemy_dead_state.cpp          | C++      |          6 |          0 |          2 |          8 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\state_machine\enemy_state_nodes\enemy_dead_state.h            | C++      |         11 |          0 |          4 |         15 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\state_machine\enemy_state_nodes\enemy_fall_state.cpp          | C++      |         15 |          0 |          6 |         21 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\state_machine\enemy_state_nodes\enemy_fall_state.h            | C++      |         11 |          0 |          3 |         14 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\state_machine\enemy_state_nodes\enemy_idle_state.cpp          | C++      |         82 |          0 |         10 |         92 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\state_machine\enemy_state_nodes\enemy_idle_state.h            | C++      |         13 |          0 |          3 |         16 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\state_machine\enemy_state_nodes\enemy_jump_state.cpp          | C++      |         39 |          0 |          5 |         44 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\state_machine\enemy_state_nodes\enemy_jump_state.h            | C++      |         13 |          0 |          4 |         17 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\state_machine\enemy_state_nodes\enemy_run_state.cpp           | C++      |         41 |          0 |          8 |         49 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\state_machine\enemy_state_nodes\enemy_run_state.h             | C++      |         14 |          0 |          4 |         18 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\state_machine\enemy_state_nodes\enemy_squat_state.cpp         | C++      |         28 |          0 |          9 |         37 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\state_machine\enemy_state_nodes\enemy_squat_state.h           | C++      |         13 |          0 |          3 |         16 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\state_machine\enemy_state_nodes\enemy_state_nodes.h           | C++      |         13 |          0 |          1 |         14 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\state_machine\enemy_state_nodes\enemy_throw_barb_state.cpp    | C++      |         26 |          0 |         10 |         36 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\state_machine\enemy_state_nodes\enemy_throw_barb_state.h      | C++      |         13 |          0 |          3 |         16 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\state_machine\enemy_state_nodes\enemy_throw_silk_state.cpp    | C++      |         38 |          0 |          9 |         47 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\state_machine\enemy_state_nodes\enemy_throw_silk_state.h      | C++      |         13 |          0 |          3 |         16 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\state_machine\enemy_state_nodes\enemy_throw_sword_state.cpp   | C++      |         55 |          0 |          9 |         64 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\state_machine\enemy_state_nodes\enemy_throw_sword_state.h     | C++      |         14 |          0 |          4 |         18 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\state_machine\player_state_nodes\player_attack_state.cpp      | C++      |         75 |          0 |         13 |         88 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\state_machine\player_state_nodes\player_attack_state.h        | C++      |         15 |          0 |          3 |         18 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\state_machine\player_state_nodes\player_dead_state.cpp        | C++      |         22 |          0 |          4 |         26 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\state_machine\player_state_nodes\player_dead_state.h          | C++      |         13 |          0 |          4 |         17 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\state_machine\player_state_nodes\player_fall_state.cpp        | C++      |         20 |          0 |          5 |         25 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\state_machine\player_state_nodes\player_fall_state.h          | C++      |         10 |          0 |          3 |         13 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\state_machine\player_state_nodes\player_idle_state.cpp        | C++      |         21 |          0 |          2 |         23 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\state_machine\player_state_nodes\player_idle_state.h          | C++      |         10 |          0 |          3 |         13 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\state_machine\player_state_nodes\player_jump_state.cpp        | C++      |         18 |          0 |          6 |         24 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\state_machine\player_state_nodes\player_jump_state.h          | C++      |         10 |          0 |          2 |         12 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\state_machine\player_state_nodes\player_roll_state.cpp        | C++      |         37 |          0 |         11 |         48 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\state_machine\player_state_nodes\player_roll_state.h          | C++      |         13 |          0 |          4 |         17 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\state_machine\player_state_nodes\player_run_state.cpp         | C++      |         24 |          0 |          3 |         27 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\state_machine\player_state_nodes\player_run_state.h           | C++      |         10 |          0 |          3 |         13 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\state_machine\player_state_nodes\player_state_nodes.h         | C++      |          8 |          0 |          1 |          9 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\state_machine\state_machine.cpp                               | C++      |         27 |          0 |          4 |         31 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\state_machine\state_machine.h                                 | C++      |         18 |          0 |          6 |         24 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\state_machine\state_node.h                                    | C++      |          9 |          0 |          2 |         11 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\timer.h                                                       | C++      |         48 |          0 |         11 |         59 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\util.h                                                        | C++      |         42 |          0 |         11 |         53 |
+| d:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\vector2.h                                                     | C++      |         43 |          0 |         16 |         59 |
+| Total                                                                                                                    |          |      2,559 |          8 |        617 |      3,184 |
++--------------------------------------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+

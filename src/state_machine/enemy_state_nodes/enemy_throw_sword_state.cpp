@@ -9,7 +9,7 @@ EnemyThrowSwordState::EnemyThrowSwordState(){
 	timer_throw.set_on_timeout([&]() {
 		Enemy* enemy = (Enemy*)CharacterManager::GetInstance()->GetEnemy();
 		enemy->throw_sword();
-		//ut::play_audio(_T("enemy_throw_sword"), false);
+		ut::play_audio(_T("enemy_throw_sword"), false);
 		});
 
 	timer_switch.set_wait_time(1.0f);

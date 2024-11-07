@@ -25,13 +25,13 @@ void PlayerAttackState::on_enter() {
 
 	switch (ut::range_random(1, 3)) {
 	case 1:
-		//ut::play_audio(_T("player_attack_1"), false);
+		ut::play_audio(_T("player_attack_1"), false);
 		break;
 	case 2:
-		//ut::play_audio(_T("player_attack_2"), false);
+		ut::play_audio(_T("player_attack_2"), false);
 		break;
 	case 3:
-		//ut::play_audio(_T("player_attack_3"), false);
+		ut::play_audio(_T("player_attack_3"), false);
 		break;
 	}
 }

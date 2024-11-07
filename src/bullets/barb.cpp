@@ -88,5 +88,5 @@ void Barb::on_break(){
 		return;
 	stage = Stage::Break;
 	collision_box->set_enabled(false);
-	//ut::play_audio(_T("barb_break"), false);
+	ut::play_audio(_T("barb_break"), false);
 }
