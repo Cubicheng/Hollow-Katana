@@ -1,5 +1,6 @@
 #include "resources_manager.h"
 #include "../util.h"
+#include <iostream>
 
 struct ImageResInfo {
 	std::string id;
@@ -95,6 +96,7 @@ void ResourcesManager::load() {
 	flip_image("player_run_right", "player_run_left", 10);
 	flip_image("player_roll_right", "player_roll_left", 7);
 
+	flip_atlas("sword_left", "sword_right");
 	flip_atlas("enemy_aim_left", "enemy_aim_right");
 	flip_atlas("enemy_dash_in_air_left", "enemy_dash_in_air_right");
 	flip_atlas("enemy_dash_on_floor_left", "enemy_dash_on_floor_right");
@@ -109,7 +111,6 @@ void ResourcesManager::load() {
 
 	flip_atlas("enemy_vfx_dash_in_air_left", "enemy_vfx_dash_in_air_right");
 	flip_atlas("enemy_vfx_dash_on_floor_left", "enemy_vfx_dash_on_floor_right");
-
 
 	ut::load_audio(_T("resources/audio/bgm.mp3"), _T("bgm"));
 	ut::load_audio(_T("resources/audio/barb_break.mp3"), _T("barb_break"));
@@ -137,15 +138,19 @@ void ResourcesManager::load() {
 
 Atlas* ResourcesManager::getAtlas(const std::string& id) const {
 	const auto& it = atlasMap.find(id);
-	if (it == atlasMap.end())
+	if (it == atlasMap.end()) {
+		std::cout << "not find " + id << std::endl;
 		return nullptr;
+	}
 	return it->second;
 }
 
 IMAGE* ResourcesManager::getImage(const std::string& id) const {
 	const auto& it = imageMap.find(id);
-	if (it == imageMap.end())
+	if (it == imageMap.end()) {
+		std::cout << "not find " + id << std::endl;
 		return nullptr;
+	}
 	return it->second;
 }
 

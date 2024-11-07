@@ -41,11 +41,23 @@ static void draw_background() {
 	ut::putimage_ex(img_background, &rect_dst);
 }
 
+void draw_remain_hp() {
+	static IMAGE* img_ui_heart = ResourcesManager::GetInstance()->getImage("ui_heart");
+	ut::Rect rect_dst = { 0,10,img_ui_heart->getwidth(),img_ui_heart->getheight() };
+	Player* player = (Player*)CharacterManager::GetInstance()->GetPlayer();
+	for (int i = 0; i < player->get_hp(); i++) {
+		rect_dst.x = 10 + i * 40;
+		ut::putimage_ex(img_ui_heart, &rect_dst);
+	}
+}
+
 int main() {
 
 	init();
 
 	LoadResources();
+
+	ut::play_audio(_T("bgm"), true);
 
 	frameTimer.init();
 
@@ -69,6 +81,7 @@ int main() {
 		draw_background();
 		CharacterManager::GetInstance()->on_render();
 		CollisionManager::getInstance()->on_debug_render();
+		draw_remain_hp();
 
 		FlushBatchDraw();
 

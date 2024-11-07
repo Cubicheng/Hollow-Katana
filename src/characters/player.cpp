@@ -20,7 +20,7 @@ Player::Player() {
 
 	hurt_box->set_layer_dst(CollisionLayer::None);
 	hurt_box->set_layer_src(CollisionLayer::PlayerLayer);
-	//hurt box is speciallyfor hurt, so the layer dst is none
+	//hurt box is specially for hurt, so the layer dst is none
 
 	hit_box->set_enabled(false);
 	hurt_box->set_on_collision(
@@ -223,20 +223,6 @@ void Player::load_animations() {
 	});
 }
 
-void Player::load_move_animation(const std::string& name, float interval, bool is_loop, int num_h) {
-	AnimationGroup& animation_group = animation_pool[name];
-
-	load_one_animation(animation_group.Left, interval, is_loop, Animation::AnchorMode::BottomCentered, "player_" + name + "_left", num_h);
-	load_one_animation(animation_group.Right, interval, is_loop, Animation::AnchorMode::BottomCentered, "player_" + name + "_right", num_h);
-}
-
-void Player::load_one_animation(Animation& animation, float interval, bool is_loop, Animation::AnchorMode anchorMode, const std::string& name, int num_h){
-	animation.set_interval(interval);
-	animation.set_loop(is_loop);
-	animation.set_anchor_mode(anchorMode);
-	animation.add_frame(ResourcesManager::GetInstance()->getImage(name), num_h);
-}
-
 void Player::update_attack_dir(int x, int y){
 	static const float PI = 3.14159265358979323846f;
 	float angle = std::atan2(-(y - (position.y - logic_height / 2)), x - position.x);
@@ -247,4 +233,19 @@ void Player::update_attack_dir(int x, int y){
 	else if (angle < -PI / 4 && angle > -3 * PI / 4)
 		attack_dir = AttackDir::Down;
 	else attack_dir = AttackDir::Left;
+}
+
+
+void Player::load_move_animation(const std::string& name, float interval, bool is_loop, int num_h) {
+	AnimationGroup& animation_group = animation_pool[name];
+
+	load_one_animation(animation_group.Left, interval, is_loop, Animation::AnchorMode::BottomCentered, "player_" + name + "_left", num_h);
+	load_one_animation(animation_group.Right, interval, is_loop, Animation::AnchorMode::BottomCentered, "player_" + name + "_right", num_h);
+}
+
+void Player::load_one_animation(Animation& animation, float interval, bool is_loop, Animation::AnchorMode anchorMode, const std::string& name, int num_h) {
+	animation.set_interval(interval);
+	animation.set_loop(is_loop);
+	animation.set_anchor_mode(anchorMode);
+	animation.add_frame(ResourcesManager::GetInstance()->getImage(name), num_h);
 }

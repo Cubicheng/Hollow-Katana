@@ -14,15 +14,18 @@ void CharacterManager::on_input(const ExMessage& msg){
 }
 
 void CharacterManager::on_update(float delta){
+    enemy->on_update(delta);
     player->on_update(delta);
 }
 
 void CharacterManager::on_render(){
+    enemy->on_render();
     BulletTimeManager::GetSingleton()->post_progress();
     player->on_render();
 }
 
 CharacterManager::CharacterManager(){
+    enemy = new Enemy();
     player = new Player();
 }
 

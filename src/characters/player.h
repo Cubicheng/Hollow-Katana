@@ -62,7 +62,7 @@ public:
 	void load_animations();
 	void load_move_animation(const std::string& name, float interval, bool is_loop, int num_h);
 	void load_one_animation(Animation& animation, float interval, bool is_loop, Animation::AnchorMode anchorMode, const std::string& name, int num_h);
-
+	
 private:
 	void update_attack_dir(int x, int y);
 

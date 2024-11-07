@@ -1,4 +1,5 @@
 #include "state_machine.h"
+#include <iostream>
 
 void StateMachine::on_update(float delta){
 	if (!current_state)
@@ -17,6 +18,9 @@ void StateMachine::set_entry(const std::string& id){
 void StateMachine::switch_to(const std::string& id){
 	if(current_state)
 		current_state->on_exit();
+	if (state_pool.find(id) == state_pool.end()) {
+		std::cout<<"state not found"<<std::endl;
+	}
 	current_state = state_pool[id];
 	if(current_state)
 		current_state->on_enter();

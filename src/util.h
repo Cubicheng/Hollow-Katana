@@ -50,4 +50,3 @@ namespace ut {
 		return rand() % (max_num - min_num + 1) + min_num;
 	}
 }
-

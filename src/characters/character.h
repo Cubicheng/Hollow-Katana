@@ -62,6 +62,10 @@ public:
 		timer_invunlerable_status.restart();
 	}
 
+	int get_floor_y() const {
+		return FLOOR_Y;
+	}
+
 	virtual void on_input(const ExMessage& msg) {}
 	virtual void on_update(float delta);
 	virtual void on_render();
@@ -71,6 +75,7 @@ public:
 	void switch_state(const std::string& id);
 	void set_animation(const std::string& id);
 
+	
 protected:
 	struct AnimationGroup {
 		Animation Left;

@@ -1,5 +1,6 @@
 #include "character.h"
 #include "../collision/collision_manager.h"
+#include "../animations/resources_manager.h"
 
 Character::Character() {
 	hit_box = CollisionManager::getInstance()->create_collision_box();

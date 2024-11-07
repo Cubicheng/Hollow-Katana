@@ -17,10 +17,9 @@ void BulletTimeManager::post_progress() {
 		for (int x = 0; x < w; x++) {
 			int idx = y * w + x;
 			DWORD color = buffer[idx];
-			//this way is more beautiful in my opinion
-			BYTE r = (BYTE)(GetBValue(color) * lerp(1.0f, DST_COLOR_FACTOR, progress));
+			BYTE r = (BYTE)(GetRValue(color) * lerp(1.0f, DST_COLOR_FACTOR, progress));
 			BYTE g = (BYTE)(GetGValue(color) * lerp(1.0f, DST_COLOR_FACTOR, progress));
-			BYTE b = (BYTE)(GetRValue(color) * lerp(1.0f, DST_COLOR_FACTOR, progress));
+			BYTE b = (BYTE)(GetBValue(color) * lerp(1.0f, DST_COLOR_FACTOR, progress));
 			buffer[idx] = RGB(r, g, b);
 		}
 	}

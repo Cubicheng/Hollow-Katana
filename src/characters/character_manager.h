@@ -2,6 +2,7 @@
 
 #include "character.h"
 #include "player.h"
+#include "enemy.h"
 
 class CharacterManager
 {
