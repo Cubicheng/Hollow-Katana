@@ -82,6 +82,7 @@ int main() {
 		CharacterManager::GetInstance()->on_render();
 		//CollisionManager::getInstance()->on_debug_render();
 		draw_remain_hp();
+		BulletTimeManager::GetSingleton()->on_render_bullet_time_hp();
 
 		FlushBatchDraw();
 

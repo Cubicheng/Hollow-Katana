@@ -57,6 +57,8 @@ public:
 	void on_dash();
 	void on_throw_silk();
 
+	void on_render_hp();
+
 private:
 	bool is_throwing_silk = false;
 	bool is_dashing_in_air = false;
@@ -64,6 +66,8 @@ private:
 
 	Animation silk_animation;
 	Animation* current_dash_animation = nullptr;
+
+	ut::Rect hp_ui = {0,0,100,5};
 
 	std::vector<Barb*> barb_list;
 	std::vector<Sword*> sword_list;

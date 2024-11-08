@@ -119,6 +119,9 @@ void Enemy::on_update(float delta){
 			if (can_remove) delete sword;
 			return can_remove;
 		}), sword_list.end());
+
+	hp_ui.x = position.x - 50;
+    hp_ui.y = position.y - 150;
 }
 
 void Enemy::on_render(){
@@ -136,6 +139,8 @@ void Enemy::on_render(){
 	
 	if (is_dashing_in_air || is_dashing_in_floor) 
 		current_dash_animation->on_render();
+
+	on_render_hp();
 }
 
 void Enemy::on_hurt(){
@@ -182,5 +187,12 @@ void Enemy::on_dash(){
 
 void Enemy::on_throw_silk(){
 	silk_animation.reset();
+}
+
+void Enemy::on_render_hp(){
+	setfillcolor(RGB(0,0,0));
+	solidrectangle(hp_ui.x, hp_ui.y, hp_ui.x + hp_ui.w, hp_ui.y + hp_ui.h);
+    setfillcolor(RGB(255,0,0));
+	solidrectangle(hp_ui.x, hp_ui.y, hp_ui.x + 1.0*hp_ui.w*hp/10, hp_ui.y + hp_ui.h);
 }
 

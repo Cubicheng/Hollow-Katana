@@ -109,8 +109,14 @@ void Player::on_input(const ExMessage& msg){
 			break;
 
 		case WM_RBUTTONDOWN:
-			ut::play_audio(_T("bullet_time"), false);
-			BulletTimeManager::GetSingleton()->set_status(BulletTimeManager::Status::Entering);
+
+			if (BulletTimeManager::GetSingleton()->get_hp() > 0) {
+				ut::play_audio(_T("bullet_time"), false);
+				BulletTimeManager::GetSingleton()->set_status(BulletTimeManager::Status::Entering);
+			}
+			else {
+				BulletTimeManager::GetSingleton()->set_status(BulletTimeManager::Status::Exiting);
+			}
 			break;
 
 		case WM_RBUTTONUP:
