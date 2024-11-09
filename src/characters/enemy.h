@@ -60,6 +60,9 @@ public:
 	void on_render_hp();
 
 private:
+
+	const float full_hp = 10;
+
 	bool is_throwing_silk = false;
 	bool is_dashing_in_air = false;
 	bool is_dashing_in_floor = false;

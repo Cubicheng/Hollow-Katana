@@ -4,6 +4,9 @@
 #include "../state_machine/enemy_state_nodes/enemy_state_nodes.h"
 
 Enemy::Enemy(){
+
+	hp = full_hp;
+
 	is_facing_left = true;
 	position = { 1050,200 };
 	logic_height = 150;
@@ -193,6 +196,6 @@ void Enemy::on_render_hp(){
 	setfillcolor(RGB(0,0,0));
 	solidrectangle(hp_ui.x, hp_ui.y, hp_ui.x + hp_ui.w, hp_ui.y + hp_ui.h);
     setfillcolor(RGB(255,0,0));
-	solidrectangle(hp_ui.x, hp_ui.y, hp_ui.x + 1.0*hp_ui.w*hp/10, hp_ui.y + hp_ui.h);
+	solidrectangle(hp_ui.x, hp_ui.y, hp_ui.x + 1.0*hp_ui.w*hp/full_hp, hp_ui.y + hp_ui.h);
 }
 

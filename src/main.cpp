@@ -14,7 +14,7 @@ bool is_quit = false;
 FrameTimer frameTimer;
 
 void init() {
-	hwnd = initgraph(1280, 720, EX_SHOWCONSOLE);
+	initgraph(1280, 720);
 	SetWindowText(hwnd, _T("Hollow Katana"));
 }
 

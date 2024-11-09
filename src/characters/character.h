@@ -82,10 +82,10 @@ protected:
 		Animation Right;
 	};
 
+	int hp = 10;
 	const float FLOOR_Y = 620;
 	const float GRAVITY = 980 * 2;
 
-	int hp = 10;
 	Vector2 position;//bottom position
 	Vector2 velocity;
 	float logic_height = 0;

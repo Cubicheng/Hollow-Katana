@@ -1,0 +1,80 @@
+﻿  barb.cpp
+D:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\animations\atlas.h(31,26): warning C4018: “>=”: 有符号/无符号不匹配
+D:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\characters\character.h(66,10): warning C4244: “return”: 从“const float”转换到“int”，可能丢失数据
+D:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\bullets\barb.cpp(26,43): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+  character_manager.cpp
+D:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\animations\atlas.h(31,26): warning C4018: “>=”: 有符号/无符号不匹配
+D:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\characters\character.h(66,10): warning C4244: “return”: 从“const float”转换到“int”，可能丢失数据
+  enemy.cpp
+D:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\animations\atlas.h(31,26): warning C4018: “>=”: 有符号/无符号不匹配
+D:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\characters\character.h(66,10): warning C4244: “return”: 从“const float”转换到“int”，可能丢失数据
+D:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\characters\enemy.cpp(8,7): warning C4244: “=”: 从“const float”转换到“int”，可能丢失数据
+D:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\characters\enemy.cpp(126,23): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+D:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\characters\enemy.cpp(127,26): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+D:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\characters\enemy.cpp(170,11): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+D:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\characters\enemy.cpp(171,11): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+D:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\characters\enemy.cpp(199,43): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+  main.cpp
+D:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\animations\atlas.h(31,26): warning C4018: “>=”: 有符号/无符号不匹配
+D:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\characters\character.h(66,10): warning C4244: “return”: 从“const float”转换到“int”，可能丢失数据
+  enemy_aim_state.cpp
+D:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\animations\atlas.h(31,26): warning C4018: “>=”: 有符号/无符号不匹配
+D:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\characters\character.h(66,10): warning C4244: “return”: 从“const float”转换到“int”，可能丢失数据
+  enemy_dash_in_air_state.cpp
+D:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\animations\atlas.h(31,26): warning C4018: “>=”: 有符号/无符号不匹配
+D:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\characters\character.h(66,10): warning C4244: “return”: 从“const float”转换到“int”，可能丢失数据
+  enemy_dash_on_floor_state.cpp
+D:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\animations\atlas.h(31,26): warning C4018: “>=”: 有符号/无符号不匹配
+D:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\characters\character.h(66,10): warning C4244: “return”: 从“const float”转换到“int”，可能丢失数据
+  enemy_fall_state.cpp
+D:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\animations\atlas.h(31,26): warning C4018: “>=”: 有符号/无符号不匹配
+D:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\characters\character.h(66,10): warning C4244: “return”: 从“const float”转换到“int”，可能丢失数据
+  enemy_idle_state.cpp
+D:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\animations\atlas.h(31,26): warning C4018: “>=”: 有符号/无符号不匹配
+D:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\characters\character.h(66,10): warning C4244: “return”: 从“const float”转换到“int”，可能丢失数据
+  enemy_jump_state.cpp
+D:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\animations\atlas.h(31,26): warning C4018: “>=”: 有符号/无符号不匹配
+D:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\characters\character.h(66,10): warning C4244: “return”: 从“const float”转换到“int”，可能丢失数据
+  enemy_run_state.cpp
+D:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\animations\atlas.h(31,26): warning C4018: “>=”: 有符号/无符号不匹配
+D:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\characters\character.h(66,10): warning C4244: “return”: 从“const float”转换到“int”，可能丢失数据
+  enemy_squat_state.cpp
+D:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\animations\atlas.h(31,26): warning C4018: “>=”: 有符号/无符号不匹配
+D:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\characters\character.h(66,10): warning C4244: “return”: 从“const float”转换到“int”，可能丢失数据
+  enemy_throw_barb_state.cpp
+D:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\animations\atlas.h(31,26): warning C4018: “>=”: 有符号/无符号不匹配
+D:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\characters\character.h(66,10): warning C4244: “return”: 从“const float”转换到“int”，可能丢失数据
+  enemy_throw_silk_state.cpp
+D:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\animations\atlas.h(31,26): warning C4018: “>=”: 有符号/无符号不匹配
+D:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\characters\character.h(66,10): warning C4244: “return”: 从“const float”转换到“int”，可能丢失数据
+  enemy_throw_sword_state.cpp
+D:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\animations\atlas.h(31,26): warning C4018: “>=”: 有符号/无符号不匹配
+D:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\characters\character.h(66,10): warning C4244: “return”: 从“const float”转换到“int”，可能丢失数据
+  player_attack_state.cpp
+D:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\animations\atlas.h(31,26): warning C4018: “>=”: 有符号/无符号不匹配
+D:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\characters\character.h(66,10): warning C4244: “return”: 从“const float”转换到“int”，可能丢失数据
+  player_dead_state.cpp
+D:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\animations\atlas.h(31,26): warning C4018: “>=”: 有符号/无符号不匹配
+D:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\characters\character.h(66,10): warning C4244: “return”: 从“const float”转换到“int”，可能丢失数据
+  player_fall_state.cpp
+D:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\animations\atlas.h(31,26): warning C4018: “>=”: 有符号/无符号不匹配
+D:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\characters\character.h(66,10): warning C4244: “return”: 从“const float”转换到“int”，可能丢失数据
+  player_idle_state.cpp
+D:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\animations\atlas.h(31,26): warning C4018: “>=”: 有符号/无符号不匹配
+D:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\characters\character.h(66,10): warning C4244: “return”: 从“const float”转换到“int”，可能丢失数据
+  player_jump_state.cpp
+D:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\animations\atlas.h(31,26): warning C4018: “>=”: 有符号/无符号不匹配
+D:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\characters\character.h(66,10): warning C4244: “return”: 从“const float”转换到“int”，可能丢失数据
+  正在编译...
+  player_roll_state.cpp
+D:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\animations\atlas.h(31,26): warning C4018: “>=”: 有符号/无符号不匹配
+D:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\characters\character.h(66,10): warning C4244: “return”: 从“const float”转换到“int”，可能丢失数据
+  player_run_state.cpp
+D:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\animations\atlas.h(31,26): warning C4018: “>=”: 有符号/无符号不匹配
+D:\Visual Studio Workspace\Hollow Katana\Hollow Katana\src\characters\character.h(66,10): warning C4244: “return”: 从“const float”转换到“int”，可能丢失数据
+  正在生成代码
+  1 of 1815 functions (<0.1%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    1 functions had inline decision re-evaluated but remain unchanged
+  已完成代码的生成
+  Hollow Katana.vcxproj -> D:\Visual Studio Workspace\Hollow Katana\Release\Hollow Katana.exe

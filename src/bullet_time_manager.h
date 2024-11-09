@@ -31,7 +31,7 @@ private:
 	Status status = Status::Exiting;
 
 	float hp = 1;
-	const float SPEED_DECREASE = 1.0f;
+	const float SPEED_DECREASE = 0.5f;
 	const float SPEED_INCREASE = 0.2f;
 
 	ut::Rect rect = { 1100,10,170,30 };
